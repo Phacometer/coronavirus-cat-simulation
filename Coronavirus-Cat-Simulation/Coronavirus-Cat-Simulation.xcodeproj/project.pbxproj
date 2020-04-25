@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		578244A524441E1E0081FA68 /* SimulationBatchRunOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578244A424441E1E0081FA68 /* SimulationBatchRunOperation.swift */; };
+		578244A72444258B0081FA68 /* SimulationBatchRunOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578244A62444258B0081FA68 /* SimulationBatchRunOperationTests.swift */; };
+		578244A92445A7B20081FA68 /* SimulationRunProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578244A82445A7B20081FA68 /* SimulationRunProgressController.swift */; };
+		578244AB24469DBE0081FA68 /* RunResultToCSVConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578244AA24469DBE0081FA68 /* RunResultToCSVConverter.swift */; };
+		578244AD2446ABF30081FA68 /* NSImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578244AC2446ABF30081FA68 /* NSImage+.swift */; };
+		578244B22446D0A40081FA68 /* InfectionStatusUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578244B12446D0A40081FA68 /* InfectionStatusUpdater.swift */; };
+		578244B42446D1340081FA68 /* Simulation Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578244B32446D1340081FA68 /* Simulation Variables.swift */; };
+		57A463F12434CB3E00675B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A463F02434CB3E00675B32 /* AppDelegate.swift */; };
+		57A463F32434CB3E00675B32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A463F22434CB3E00675B32 /* ViewController.swift */; };
+		57A463F52434CB3F00675B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A463F42434CB3F00675B32 /* Assets.xcassets */; };
+		57A463F82434CB3F00675B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A463F62434CB3F00675B32 /* Main.storyboard */; };
+		57A464032435987D00675B32 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A464022435987D00675B32 /* Agent.swift */; };
+		57A4640524359A1400675B32 /* DiseaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4640424359A1400675B32 /* DiseaseState.swift */; };
+		57A4640724359C6D00675B32 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4640624359C6D00675B32 /* Person.swift */; };
+		57A4640924359D9100675B32 /* Household.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4640824359D9100675B32 /* Household.swift */; };
+		57A4640D2435A89100675B32 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4640C2435A89100675B32 /* Cat.swift */; };
+		57A4641F2435B38300675B32 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4641E2435B38300675B32 /* PersonTests.swift */; };
+		57A464212435D26D00675B32 /* AgentMovementAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A464202435D26D00675B32 /* AgentMovementAlgorithm.swift */; };
+		57A464252435DA6000675B32 /* CatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A464242435DA6000675B32 /* CatTests.swift */; };
+		57A464272436E4D700675B32 /* AgentMovementAlgorithmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A464262436E4D700675B32 /* AgentMovementAlgorithmTests.swift */; };
+		57A464292436FBFE00675B32 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A464282436FBFE00675B32 /* Environment.swift */; };
+		57A4642B24371FB000675B32 /* EnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4642A24371FB000675B32 /* EnvironmentTests.swift */; };
+		57A4642F2437342100675B32 /* EnvironmentSimulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4642E2437342100675B32 /* EnvironmentSimulation.swift */; };
+		57A464332438A9FB00675B32 /* EnvironmentSimulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A464322438A9FB00675B32 /* EnvironmentSimulationTests.swift */; };
+		57A4643D243B133E00675B32 /* InfectionProbabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4643C243B133E00675B32 /* InfectionProbabilityTests.swift */; };
+		57A46442243DF1B700675B32 /* SimulationEnvironmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A46441243DF1B700675B32 /* SimulationEnvironmentView.swift */; };
+		57A46444243DF1DE00675B32 /* InfectionGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A46443243DF1DE00675B32 /* InfectionGraphView.swift */; };
+		57A46446244031A500675B32 /* EnvironmentSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A46445244031A500675B32 /* EnvironmentSettingsView.swift */; };
+		57A464482441CBFE00675B32 /* DisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A464472441CBFE00675B32 /* DisplayLink.swift */; };
+		57A4644B2441F33500675B32 /* NSBezierPath+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A4644A2441F33500675B32 /* NSBezierPath+.swift */; };
+		57CBD5712442A213002A8891 /* SimulationInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBD5702442A213002A8891 /* SimulationInformationView.swift */; };
+		57CBD5752442E967002A8891 /* InfectionStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CBD5742442E966002A8891 /* InfectionStatisticsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57A464192435B2FD00675B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57A463E52434CB3E00675B32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57A463EC2434CB3E00675B32;
+			remoteInfo = "Coronavirus-Cat-Simulation";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		578244A424441E1E0081FA68 /* SimulationBatchRunOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationBatchRunOperation.swift; sourceTree = "<group>"; };
+		578244A62444258B0081FA68 /* SimulationBatchRunOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationBatchRunOperationTests.swift; sourceTree = "<group>"; };
+		578244A82445A7B20081FA68 /* SimulationRunProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationRunProgressController.swift; sourceTree = "<group>"; };
+		578244AA24469DBE0081FA68 /* RunResultToCSVConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunResultToCSVConverter.swift; sourceTree = "<group>"; };
+		578244AC2446ABF30081FA68 /* NSImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSImage+.swift"; sourceTree = "<group>"; };
+		578244B12446D0A40081FA68 /* InfectionStatusUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectionStatusUpdater.swift; sourceTree = "<group>"; };
+		578244B32446D1340081FA68 /* Simulation Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simulation Variables.swift"; sourceTree = "<group>"; };
+		57A463ED2434CB3E00675B32 /* Coronavirus-Cat-Simulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coronavirus-Cat-Simulation.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A463F02434CB3E00675B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		57A463F22434CB3E00675B32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57A463F42434CB3F00675B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57A463F72434CB3F00675B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		57A463F92434CB3F00675B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57A463FA2434CB3F00675B32 /* Coronavirus_Cat_Simulation.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Coronavirus_Cat_Simulation.entitlements; sourceTree = "<group>"; };
+		57A464022435987D00675B32 /* Agent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		57A4640424359A1400675B32 /* DiseaseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiseaseState.swift; sourceTree = "<group>"; };
+		57A4640624359C6D00675B32 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		57A4640824359D9100675B32 /* Household.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Household.swift; sourceTree = "<group>"; };
+		57A4640C2435A89100675B32 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		57A464142435B2FD00675B32 /* Coronavirus-Cat-Simulation Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coronavirus-Cat-Simulation Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57A464182435B2FD00675B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57A4641E2435B38300675B32 /* PersonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		57A464202435D26D00675B32 /* AgentMovementAlgorithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgentMovementAlgorithm.swift; sourceTree = "<group>"; };
+		57A464242435DA6000675B32 /* CatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatTests.swift; sourceTree = "<group>"; };
+		57A464262436E4D700675B32 /* AgentMovementAlgorithmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgentMovementAlgorithmTests.swift; sourceTree = "<group>"; };
+		57A464282436FBFE00675B32 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		57A4642A24371FB000675B32 /* EnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentTests.swift; sourceTree = "<group>"; };
+		57A4642E2437342100675B32 /* EnvironmentSimulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSimulation.swift; sourceTree = "<group>"; };
+		57A464322438A9FB00675B32 /* EnvironmentSimulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSimulationTests.swift; sourceTree = "<group>"; };
+		57A4643C243B133E00675B32 /* InfectionProbabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectionProbabilityTests.swift; sourceTree = "<group>"; };
+		57A46441243DF1B700675B32 /* SimulationEnvironmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationEnvironmentView.swift; sourceTree = "<group>"; };
+		57A46443243DF1DE00675B32 /* InfectionGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectionGraphView.swift; sourceTree = "<group>"; };
+		57A46445244031A500675B32 /* EnvironmentSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentSettingsView.swift; sourceTree = "<group>"; };
+		57A464472441CBFE00675B32 /* DisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayLink.swift; sourceTree = "<group>"; };
+		57A4644A2441F33500675B32 /* NSBezierPath+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSBezierPath+.swift"; sourceTree = "<group>"; };
+		57CBD5702442A213002A8891 /* SimulationInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationInformationView.swift; sourceTree = "<group>"; };
+		57CBD5742442E966002A8891 /* InfectionStatisticsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfectionStatisticsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57A463EA2434CB3E00675B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57A464112435B2FD00675B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578244A324441E060081FA68 /* Automation */ = {
+			isa = PBXGroup;
+			children = (
+				578244A424441E1E0081FA68 /* SimulationBatchRunOperation.swift */,
+				578244AA24469DBE0081FA68 /* RunResultToCSVConverter.swift */,
+			);
+			path = Automation;
+			sourceTree = "<group>";
+		};
+		578244AE2446C5D40081FA68 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57A463F22434CB3E00675B32 /* ViewController.swift */,
+				578244A82445A7B20081FA68 /* SimulationRunProgressController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		57A463E42434CB3E00675B32 = {
+			isa = PBXGroup;
+			children = (
+				57A463EF2434CB3E00675B32 /* Coronavirus-Cat-Simulation */,
+				57A464152435B2FD00675B32 /* Coronavirus-Cat-Simulation Tests */,
+				57A463EE2434CB3E00675B32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57A463EE2434CB3E00675B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57A463ED2434CB3E00675B32 /* Coronavirus-Cat-Simulation.app */,
+				57A464142435B2FD00675B32 /* Coronavirus-Cat-Simulation Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57A463EF2434CB3E00675B32 /* Coronavirus-Cat-Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				57A463F02434CB3E00675B32 /* AppDelegate.swift */,
+				578244AE2446C5D40081FA68 /* View Controllers */,
+				578244A324441E060081FA68 /* Automation */,
+				57A46440243D73BE00675B32 /* Views */,
+				57A464012435979B00675B32 /* Model */,
+				57A464492441D18000675B32 /* Commons */,
+				57A463F42434CB3F00675B32 /* Assets.xcassets */,
+				57A463F62434CB3F00675B32 /* Main.storyboard */,
+				57A463F92434CB3F00675B32 /* Info.plist */,
+				57A463FA2434CB3F00675B32 /* Coronavirus_Cat_Simulation.entitlements */,
+			);
+			path = "Coronavirus-Cat-Simulation";
+			sourceTree = "<group>";
+		};
+		57A464012435979B00675B32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57A464022435987D00675B32 /* Agent.swift */,
+				57A464202435D26D00675B32 /* AgentMovementAlgorithm.swift */,
+				57A4640624359C6D00675B32 /* Person.swift */,
+				57A4640C2435A89100675B32 /* Cat.swift */,
+				57A4640824359D9100675B32 /* Household.swift */,
+				57A4640424359A1400675B32 /* DiseaseState.swift */,
+				57A464282436FBFE00675B32 /* Environment.swift */,
+				57A4642E2437342100675B32 /* EnvironmentSimulation.swift */,
+				578244B12446D0A40081FA68 /* InfectionStatusUpdater.swift */,
+				578244B32446D1340081FA68 /* Simulation Variables.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		57A464152435B2FD00675B32 /* Coronavirus-Cat-Simulation Tests */ = {
+			isa = PBXGroup;
+			children = (
+				57A4641E2435B38300675B32 /* PersonTests.swift */,
+				57A464242435DA6000675B32 /* CatTests.swift */,
+				57A464262436E4D700675B32 /* AgentMovementAlgorithmTests.swift */,
+				57A4642A24371FB000675B32 /* EnvironmentTests.swift */,
+				57A464322438A9FB00675B32 /* EnvironmentSimulationTests.swift */,
+				57A4643C243B133E00675B32 /* InfectionProbabilityTests.swift */,
+				578244A62444258B0081FA68 /* SimulationBatchRunOperationTests.swift */,
+				57A464182435B2FD00675B32 /* Info.plist */,
+			);
+			path = "Coronavirus-Cat-Simulation Tests";
+			sourceTree = "<group>";
+		};
+		57A46440243D73BE00675B32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57CBD5702442A213002A8891 /* SimulationInformationView.swift */,
+				57A46441243DF1B700675B32 /* SimulationEnvironmentView.swift */,
+				57A46443243DF1DE00675B32 /* InfectionGraphView.swift */,
+				57A46445244031A500675B32 /* EnvironmentSettingsView.swift */,
+				57CBD5742442E966002A8891 /* InfectionStatisticsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57A464492441D18000675B32 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				57A464472441CBFE00675B32 /* DisplayLink.swift */,
+				57A4644A2441F33500675B32 /* NSBezierPath+.swift */,
+				578244AC2446ABF30081FA68 /* NSImage+.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57A463EC2434CB3E00675B32 /* Coronavirus-Cat-Simulation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57A463FD2434CB3F00675B32 /* Build configuration list for PBXNativeTarget "Coronavirus-Cat-Simulation" */;
+			buildPhases = (
+				57A463E92434CB3E00675B32 /* Sources */,
+				57A463EA2434CB3E00675B32 /* Frameworks */,
+				57A463EB2434CB3E00675B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Coronavirus-Cat-Simulation";
+			productName = "Coronavirus-Cat-Simulation";
+			productReference = 57A463ED2434CB3E00675B32 /* Coronavirus-Cat-Simulation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		57A464132435B2FD00675B32 /* Coronavirus-Cat-Simulation Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57A4641B2435B2FD00675B32 /* Build configuration list for PBXNativeTarget "Coronavirus-Cat-Simulation Tests" */;
+			buildPhases = (
+				57A464102435B2FD00675B32 /* Sources */,
+				57A464112435B2FD00675B32 /* Frameworks */,
+				57A464122435B2FD00675B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				57A4641A2435B2FD00675B32 /* PBXTargetDependency */,
+			);
+			name = "Coronavirus-Cat-Simulation Tests";
+			productName = "Coronavirus-Cat-Simulation Tests";
+			productReference = 57A464142435B2FD00675B32 /* Coronavirus-Cat-Simulation Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57A463E52434CB3E00675B32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = vgao;
+				TargetAttributes = {
+					57A463EC2434CB3E00675B32 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					57A464132435B2FD00675B32 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 57A463EC2434CB3E00675B32;
+					};
+				};
+			};
+			buildConfigurationList = 57A463E82434CB3E00675B32 /* Build configuration list for PBXProject "Coronavirus-Cat-Simulation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57A463E42434CB3E00675B32;
+			productRefGroup = 57A463EE2434CB3E00675B32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57A463EC2434CB3E00675B32 /* Coronavirus-Cat-Simulation */,
+				57A464132435B2FD00675B32 /* Coronavirus-Cat-Simulation Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57A463EB2434CB3E00675B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A463F52434CB3F00675B32 /* Assets.xcassets in Resources */,
+				57A463F82434CB3F00675B32 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57A464122435B2FD00675B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57A463E92434CB3E00675B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				578244AB24469DBE0081FA68 /* RunResultToCSVConverter.swift in Sources */,
+				57A464212435D26D00675B32 /* AgentMovementAlgorithm.swift in Sources */,
+				578244B42446D1340081FA68 /* Simulation Variables.swift in Sources */,
+				57A4640724359C6D00675B32 /* Person.swift in Sources */,
+				57A4642F2437342100675B32 /* EnvironmentSimulation.swift in Sources */,
+				57A46446244031A500675B32 /* EnvironmentSettingsView.swift in Sources */,
+				57A4640D2435A89100675B32 /* Cat.swift in Sources */,
+				578244B22446D0A40081FA68 /* InfectionStatusUpdater.swift in Sources */,
+				57A4640524359A1400675B32 /* DiseaseState.swift in Sources */,
+				57A464292436FBFE00675B32 /* Environment.swift in Sources */,
+				578244A524441E1E0081FA68 /* SimulationBatchRunOperation.swift in Sources */,
+				57CBD5752442E967002A8891 /* InfectionStatisticsView.swift in Sources */,
+				57A4644B2441F33500675B32 /* NSBezierPath+.swift in Sources */,
+				578244AD2446ABF30081FA68 /* NSImage+.swift in Sources */,
+				57A46442243DF1B700675B32 /* SimulationEnvironmentView.swift in Sources */,
+				57A464032435987D00675B32 /* Agent.swift in Sources */,
+				57A464482441CBFE00675B32 /* DisplayLink.swift in Sources */,
+				57A4640924359D9100675B32 /* Household.swift in Sources */,
+				578244A92445A7B20081FA68 /* SimulationRunProgressController.swift in Sources */,
+				57CBD5712442A213002A8891 /* SimulationInformationView.swift in Sources */,
+				57A463F32434CB3E00675B32 /* ViewController.swift in Sources */,
+				57A46444243DF1DE00675B32 /* InfectionGraphView.swift in Sources */,
+				57A463F12434CB3E00675B32 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57A464102435B2FD00675B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57A464272436E4D700675B32 /* AgentMovementAlgorithmTests.swift in Sources */,
+				57A464332438A9FB00675B32 /* EnvironmentSimulationTests.swift in Sources */,
+				57A4642B24371FB000675B32 /* EnvironmentTests.swift in Sources */,
+				57A464252435DA6000675B32 /* CatTests.swift in Sources */,
+				57A4641F2435B38300675B32 /* PersonTests.swift in Sources */,
+				578244A72444258B0081FA68 /* SimulationBatchRunOperationTests.swift in Sources */,
+				57A4643D243B133E00675B32 /* InfectionProbabilityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57A4641A2435B2FD00675B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57A463EC2434CB3E00675B32 /* Coronavirus-Cat-Simulation */;
+			targetProxy = 57A464192435B2FD00675B32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		57A463F62434CB3F00675B32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				57A463F72434CB3F00675B32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		57A463FB2434CB3F00675B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57A463FC2434CB3F00675B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		57A463FE2434CB3F00675B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Coronavirus-Cat-Simulation/Coronavirus_Cat_Simulation.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y2QDGV875W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Coronavirus-Cat-Simulation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vgao.Coronavirus-Cat-Simulation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		57A463FF2434CB3F00675B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Coronavirus-Cat-Simulation/Coronavirus_Cat_Simulation.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y2QDGV875W;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Coronavirus-Cat-Simulation/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vgao.Coronavirus-Cat-Simulation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		57A4641C2435B2FD00675B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y2QDGV875W;
+				INFOPLIST_FILE = "Coronavirus-Cat-Simulation Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vgao.Coronavirus-Cat-Simulation-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coronavirus-Cat-Simulation.app/Contents/MacOS/Coronavirus-Cat-Simulation";
+			};
+			name = Debug;
+		};
+		57A4641D2435B2FD00675B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y2QDGV875W;
+				INFOPLIST_FILE = "Coronavirus-Cat-Simulation Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "vgao.Coronavirus-Cat-Simulation-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coronavirus-Cat-Simulation.app/Contents/MacOS/Coronavirus-Cat-Simulation";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57A463E82434CB3E00675B32 /* Build configuration list for PBXProject "Coronavirus-Cat-Simulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A463FB2434CB3F00675B32 /* Debug */,
+				57A463FC2434CB3F00675B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57A463FD2434CB3F00675B32 /* Build configuration list for PBXNativeTarget "Coronavirus-Cat-Simulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A463FE2434CB3F00675B32 /* Debug */,
+				57A463FF2434CB3F00675B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57A4641B2435B2FD00675B32 /* Build configuration list for PBXNativeTarget "Coronavirus-Cat-Simulation Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57A4641C2435B2FD00675B32 /* Debug */,
+				57A4641D2435B2FD00675B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57A463E52434CB3E00675B32 /* Project object */;
+}
